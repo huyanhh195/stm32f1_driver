@@ -5,16 +5,20 @@
 *.o
 *.ko
 *.obj
+
+# Build output
 *.elf
+*.hex
+*.bin
+*.out
+*.map
+*.lst
+*.list
+*.symbols
 
 # Linker output
 *.ilk
-*.map
 *.exp
-
-# Precompiled Headers
-*.gch
-*.pch
 
 # Libraries
 *.lib
@@ -22,7 +26,7 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
+# Shared objects
 *.dll
 *.so
 *.so.*
@@ -30,26 +34,56 @@
 
 # Executables
 *.exe
-*.out
 *.app
-*.i*86
-*.x86_64
-*.hex
 
 # Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
 *.dwo
+
+# STM32 / ARM build artifacts
+*.axf
+*.srec
+*. bak
+*.crf
+*.elf
+*.htm
+*.html
+*.lnp
+*.lst
+*.map
+*.o
+*.obj
+*.scvd
+*.sct
+*.dep
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+*.launch
+
+# Build directories
+build/
+Build/
+Debug/
+Release/
+out/
+bin/
+obj/
+
+# IDE files
+.vscode/
+.idea/
+.settings/
+.project
+.cproject
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+MDK-ARM/stm32f103_driver/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
